@@ -1,0 +1,22 @@
+name: Validate JSON
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.json' # JSONファイルが変更された場合のみ実行
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Validate JSON files
+      run: |
+        for json_file in $(find . -name "*.json"); do
+          echo "Validating $json_file"
+          cat $json_file | jq . >/dev/null || exit 1
+        done
