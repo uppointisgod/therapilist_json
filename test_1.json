@@ -1,5 +1,5 @@
 {
-  "url": "https://mrs-pulpunte.com",
+  "url": "https://mrs-pulpunte.com"
   "list_url": "https://mrs-pulpunte.com/gals/",
   "detail": {
     "xpath": "//*[@class='listTypeJ']//li/a",
