@@ -1,0 +1,66 @@
+{
+  "url": "https://mrs-pulpunte.com",
+  "list_url": "https://mrs-pulpunte.com/gals/",
+  "detail": {
+    "xpath": "//*[@class='listTypeJ']//li/a",
+    "attr": "href",
+    "regex": null,
+    "ng_words": null
+  },
+  "therapist": {
+    "name": {
+      "xpath": "//*[@id='datatab']//h3",
+      "regex": "^(.+)\\(",
+      "ng_words": null
+    },
+    "age": {
+      "xpath": "//*[@id='datatab']//h3",
+      "regex": "(\\d+)",
+      "ng_words": null
+    },
+    "height": {
+      "xpath": "//*[@id='datatab']//h3/span",
+      "regex": "(\\d+)cm",
+      "ng_words": null
+    },
+    "comment": {
+      "xpath": "//*[@id='pdata_box']//tr/th[contains(text(), 'お店から')]/following-sibling::*//span",
+      "regex": null,
+      "ng_words": null
+    },
+    "twitter": {
+      "xpath": null,
+      "attr": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "image": {
+      "xpath": "//*[contains(@class, 'gallery-top')]//img",
+      "attr": "src",
+      "regex": null,
+      "ng_words": null
+    },
+    "schedule": {
+      "date": {
+        "month": {
+          "xpath": "//*[@id='schedule_box']//th",
+          "regex": "(\\d{1,2})/"
+        },
+        "day": {
+          "xpath": "//*[@id='schedule_box']//th",
+          "regex": "/(\\d{1,2})"
+        }
+      },
+      "time": {
+        "start": {
+          "xpath": "//*[@id='schedule_box']//td",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
+        },
+        "end": {
+          "xpath": "//*[@id='schedule_box']//td",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
+        }
+      }
+    }
+  }
+}
