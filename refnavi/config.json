@@ -1,0 +1,162 @@
+{
+  "url": "https://osaka.refle.info/G0000/",
+  "list": {
+    "xpath": "//a[contains(text(), '次の50件→')]",
+    "attr": "href",
+    "regex": null,
+    "ng_words": null
+  },
+  "detail": {
+    "xpath": "//div[@class='salondata']//a[contains(@href, '/shop/')]",
+    "attr": "href",
+    "regex": null,
+    "ng_words": ["shop_news.html", "shop_cpon.html"]
+  },
+  "shop": {
+    "schema": {
+      "xpath": "//script[contains(@type, 'application')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "area": {
+      "xpath": "//div[contains(@class, 'shop_area_genre_2018')]//a",
+      "regex": null,
+      "ng_words": null
+    },
+    "type": {
+      "xpath": "//div[contains(@class, 'shop_area_genre_2018')]//p[contains(@class, 'genre_2018')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "blog_url": {
+      "xpath": "//table[contains(@class, 'contact_form2')]//i[contains(@class, 'fa-blog')]/../..",
+      "regex": null,
+      "ng_words": null
+    },
+    "intro_header": {
+      "xpath": "//h2[contains(@class, 'si_shop_dtl_intro_header')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "intro_text": {
+      "xpath": "//div[contains(@class, 'si_shop_dtl_intro_cmt')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "room": {
+      "xpath": "//div[contains(@class, 'salondata')]//div[contains(@class, 'contact_form2_wrap')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "room_name": {
+      "xpath": ".//div[contains(@class, 'contact_form2_title')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "address": {
+      "xpath": ".//th[contains(text(), '住　所')]/following-sibling::td//div[@class='accessmap_spec']",
+      "regex": null,
+      "ng_words": null
+    },
+    "parking": {
+      "xpath": ".//th[contains(text(), '駐車場')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "line": {
+      "xpath": ".//th[contains(text(), 'LINE ID')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "tel": {
+      "xpath": ".//th[contains(text(), '電話番号')]/following-sibling::td//div[@class='form_tel']",
+      "regex": null,
+      "ng_words": null
+    },
+    "holiday": {
+      "xpath": ".//th[contains(text(), '定休日')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "cashless": {
+      "xpath": ".//th[contains(text(), 'キャッシュレス決済')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "reception_sex": {
+      "xpath": ".//th[contains(text(), '受付性別')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "reserve": {
+      "xpath": ".//th[contains(text(), '予約')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "dispatch": {
+      "xpath": ".//th[contains(text(), '派遣地域')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "kodawari": {
+      "xpath": ".//th[contains(text(), 'こだわり条件')]/following-sibling::td//ul[@class='shopdata_kodawari3']/li/a",
+      "regex": null,
+      "ng_words": null
+    },
+    "access": {
+      "xpath": ".//th[contains(text(), 'アクセス方法')]/following-sibling::td",
+      "regex": null,
+      "ng_words": null
+    },
+    "map": {
+      "xpath": ".//a[contains(@class, 'shopmap3')]",
+      "attr": "href",
+      "regex": null,
+      "ng_words": null,
+      "url": {
+        "xpath": "//li[@class='si_current']//a[contains(@href, 'maps.google.co.jp')]",
+        "attr": "href",
+        "regex": null,
+        "ng_words": null
+      }
+    }
+  },
+  "menu": {
+    "link": {
+      "xpath": "//a[contains(text(), 'メニュー・料金')]",
+      "attr": "href",
+      "regex": null,
+      "ng_words": null
+    },
+    "item": {
+      "xpath": "//div[@id='container']//div[contains(@class, 'treatmentmenu')]",
+      "regex": null,
+      "ng_words": null,
+      "title": {
+        "xpath": ".//h3[@class='treatment_title']",
+        "regex": null,
+        "ng_words": null
+      },
+      "text": {
+        "xpath": ".//p[@class='treatment_cap']",
+        "regex": null,
+        "ng_words": null
+      },
+      "row": {
+        "xpath": ".//table[@class='treatment']//tr",
+        "regex": null,
+        "ng_words": null,
+        "label": {
+          "xpath": ".//th",
+          "regex": null,
+          "ng_words": null
+        },
+        "value": {
+          "xpath": ".//td",
+          "regex": null,
+          "ng_words": null
+        }
+      }
+    }
+  }
+}
