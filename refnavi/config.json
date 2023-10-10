@@ -68,6 +68,11 @@
       "regex": null,
       "ng_words": null
     },
+    "x_account": {
+      "xpath": null,
+      "regex": null,
+      "ng_words": null
+    },
     "tel": {
       "xpath": ".//th[contains(text(), '電話番号')]/following-sibling::td//div[@class='form_tel']",
       "regex": null,
@@ -98,7 +103,7 @@
       "regex": null,
       "ng_words": null
     },
-    "kodawari": {
+    "tags": {
       "xpath": ".//th[contains(text(), 'こだわり条件')]/following-sibling::td//ul[@class='shopdata_kodawari3']/li/a",
       "regex": null,
       "ng_words": null
@@ -153,7 +158,7 @@
         },
         "value": {
           "xpath": ".//td",
-          "regex": null,
+          "regex": "([0-9,]+)",
           "ng_words": null
         }
       }
