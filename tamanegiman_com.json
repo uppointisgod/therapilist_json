@@ -1,7 +1,7 @@
 {
   "url": "https://tamanegiman.com",
   "refnavi_url": "https://osaka.refle.info/shop/tamanegiman/",
-  "list_url": null,
+  "list_url": "https://tamanegiman.com/model.html",
   "detail": {
     "xpath": "//*[contains(@class, 'gals_list')]//section//a[contains(@href, 'model_profile')]",
     "attr": "href",
