@@ -1,31 +1,31 @@
 {
   "url": "https://firstclass-osaka.net",
   "refnavi_url": "https://osaka.refle.info/shop/firstclass/",
-  "list_url": null,
+  "list_url": "https://firstclass-osaka.net/cast_list",
   "detail": {
-    "xpath": null,
-    "attr": null,
+    "xpath": "//*[@id='therapist']//a[@class='cast_image']",
+    "attr": "href",
     "regex": null,
     "ng_words": null
   },
   "therapist": {
     "name": {
-      "xpath": null,
+      "xpath": "//*[@id='precaution']//h2",
       "regex": null,
       "ng_words": null
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//*[@class='cast_top']//li[contains(text(), '歳')]",
+      "regex": "(\\d{1,2})歳",
       "ng_words": null
     },
     "height": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//*[@class='cast_top']//li[contains(text(), 'cm')]",
+      "regex": "(\\d{1,3})cm",
       "ng_words": null
     },
     "comment": {
-      "xpath": null,
+      "xpath": "//*[@class='cast_top_txt']",
       "regex": null,
       "ng_words": null
     },
@@ -36,30 +36,30 @@
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//*[contains(@class, 'cast_slide')]//img",
+      "attr": "src",
       "regex": null,
       "ng_words": null
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//*[@id='custom-month']",
+          "regex": "(\\d{1,2})月"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='calendar']//*[contains(@class, 'fc-content')]//*[contains(@class, 'fc-date')]",
+          "regex": "(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='calendar']//*[contains(@class, 'fc-content')]//div/span",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='calendar']//*[contains(@class, 'fc-content')]//div/span",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }
