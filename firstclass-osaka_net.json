@@ -12,7 +12,7 @@
     "name": {
       "xpath": "//*[@id='precaution']//h2",
       "regex": null,
-      "ng_words": null
+      "ng_words": ["店長"]
     },
     "age": {
       "xpath": "//*[@class='cast_top']//li[contains(text(), '歳')]",
