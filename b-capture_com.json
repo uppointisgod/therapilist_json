@@ -1,0 +1,71 @@
+{
+  "url": "https://b-capture.com",
+  "refnavi_url": "https://osaka.refle.info/shop/b-capture/",
+  "list_url": "https://b-capture.com/model.html",
+  "detail": {
+    "xpath": "//*[contains(@class, 'gals_list')]//section//a[contains(@href, 'model_profile')]",
+    "attr": "href",
+    "regex": null,
+    "ng_words": null
+  },
+  "therapist": {
+    "name": {
+      "xpath": "//h2[@class='today_flag']",
+      "regex": "(.*)\\(",
+      "ng_words": [
+        "体験入店",
+        "非公開",
+        "店長"
+      ]
+    },
+    "age": {
+      "xpath": "//h2[@class='today_flag']",
+      "regex": "\\((\\d{1,2})\\)",
+      "ng_words": null
+    },
+    "height": {
+      "xpath": "//h2[@class='today_flag']/span",
+      "regex": "(\\d{1,3})cm",
+      "ng_words": null
+    },
+    "comment": {
+      "xpath": "//div[contains(@class, 'comment')]/div[contains(@class, 'text_free')]",
+      "regex": null,
+      "ng_words": null
+    },
+    "x_account": {
+      "xpath": null,
+      "attr": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "image": {
+      "xpath": "//*[@id='thumb_image']//img",
+      "attr": "src",
+      "regex": null,
+      "ng_words": null
+    },
+    "schedule": {
+      "date": {
+        "month": {
+          "xpath": "//*[contains(@class, 'schedule')]//li/span",
+          "regex": "(\\d{1,2})/"
+        },
+        "day": {
+          "xpath": "//*[contains(@class, 'schedule')]//li/span",
+          "regex": "/(\\d{1,2})"
+        }
+      },
+      "time": {
+        "start": {
+          "xpath": "//*[contains(@class, 'schedule')]//li",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
+        },
+        "end": {
+          "xpath": "//*[contains(@class, 'schedule')]//li",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
+        }
+      }
+    }
+  }
+}
