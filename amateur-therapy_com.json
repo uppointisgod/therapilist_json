@@ -44,11 +44,13 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//table[@id='schedule']/thead/tr/th[count(//table[@id='schedule']/tbody/tr/td[./em]/preceding-sibling::td)+1]",
+
+
+          "xpath":"//table[@id='schedule']/thead/tr/th[position() = (//table[@id='schedule']/tbody/tr/td[em]/preceding-sibling::td/count() + 1)]",
           "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath": "//table[@id='schedule']/thead/tr/th[count(//table[@id='schedule']/tbody/tr/td[./em]/preceding-sibling::td)+1]",
+          "xpath":"//table[@id='schedule']/thead/tr/th[position() = (//table[@id='schedule']/tbody/tr/td[em]/preceding-sibling::td/count() + 1)]",
           "regex": "/(\\d{1,2})"
         }
       },
