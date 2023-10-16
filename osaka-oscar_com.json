@@ -9,7 +9,7 @@
     "ng_words": null
   },
   "detail": {
-    "xpath": "//main[@id='therapists']//ul[@class, 'scheduleList']/li/a",
+    "xpath": "//main[@id='therapists']//ul[contains(@class, 'scheduleList')]/li/a",
     "attr": "href",
     "regex": null,
     "ng_words": null
