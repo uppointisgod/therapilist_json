@@ -47,7 +47,7 @@
     "image": {
       "xpath": "//div[@class='prof-image-wrap']//div[contains(@class, 'prof-image')]",
       "attr": "style",
-      "regex": "url\\((.*)\\)",
+      "regex": "url\\(\\"(.*)\\"\\)",
       "ng_words": null
     },
     "schedule": {
