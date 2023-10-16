@@ -10,12 +10,12 @@
   },
   "therapist": {
     "name": {
-      "xpath": "//div[@class='profile_box_right']/following-sibling::div[@class='txt_box']/p",
+      "xpath": "//div[@class='profile_box_right']/div[@class='txt_box']/p",
       "regex": "(.*)\\(",
       "ng_words": null
     },
     "age": {
-      "xpath": "//div[@class='profile_box_right']/following-sibling::div[@class='txt_box']/p",
+      "xpath": "//div[@class='profile_box_right']/div[@class='txt_box']/p",
       "regex": "\\((\\d{1,2})\\)",
       "ng_words": null
     },
