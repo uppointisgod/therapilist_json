@@ -3,7 +3,7 @@
   "refnavi_url": "https://osaka.refle.info/shop/shiroutotherapy/",
   "list_url": "https://amateur-therapy.com/lady.php",
   "detail": {
-    "xpath": "//ul[@class='ladyList']/li/a",
+    "xpath": "//ul[contains(@class, 'ladyList')]/li/a",
     "attr": "href",
     "regex": null,
     "ng_words": null
