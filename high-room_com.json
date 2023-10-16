@@ -1,65 +1,71 @@
 {
   "url": "https://high-room.com/",
   "refnavi_url": "https://osaka.refle.info/shop/high-room/",
-  "list_url": null,
-  "detail": {
+  "list_url": "https://high-room.com/therapist/",
+  "next_page_url": {
     "xpath": null,
     "attr": null,
     "regex": null,
     "ng_words": null
   },
+  "detail": {
+    "xpath": "//div[@id='therapist_list']/ul[contains(@class, 'therapist_listbox')]/li//div[@class='g_link']//a",
+    "attr": "href",
+    "regex": null,
+    "ng_words": null
+  },
   "therapist": {
     "name": {
-      "xpath": null,
+      "xpath": "//div[contains(@class, 'nametit')]//h1[@class='name']",
       "regex": null,
       "ng_words": null
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[contains(@class, 'nametit')]//span[@class='txt']",
+      "regex": "(\\d{1,2})歳",
       "ng_words": null
     },
     "height": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[contains(@class, 'nametit')]//span[@class='txt']",
+      "regex": "(\\d{1,3})cm",
       "ng_words": null
     },
     "comment": {
-      "xpath": null,
+      "xpath": "//div[@class='comment']//div[contains(text(), 'お店からのコメント')]/following-sibling::div",
       "regex": null,
       "ng_words": null
     },
     "x_account": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//ul[contains(@class, 'snslink')]/li[2]/a",
+      "attr": "href",
       "regex": null,
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//div[contains(@class, 'sildebox')]//div[contains(@class, 'changepager')]//img",
+      "attr": "src",
       "regex": null,
       "ng_words": null
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_list')]//dl/dt[@class='fg']",
+          "regex": "(\\d{1,2})月"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_list')]//dl/dt[@class='fg']",
+          "regex": "(\\d{1,2})日"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_list')]//dl[{index}]/dd[@class='fg']",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_list')]//dl[{index}]/dd[@class='fg']",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }

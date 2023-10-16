@@ -2,6 +2,12 @@
   "url": "https://wife-line.com/",
   "refnavi_url": "https://osaka.refle.info/shop/wife-line/",
   "list_url": "https://wife-line.com/model.html",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//*[contains(@class, 'gals_list')]//section//a[contains(@href, 'model_profile')]",
     "attr": "href",

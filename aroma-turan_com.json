@@ -1,31 +1,37 @@
 {
   "url": "https://aroma-turan.com/",
   "refnavi_url": "https://osaka.refle.info/shop/aroma-turan/",
-  "list_url": null,
-  "detail": {
+  "list_url": "https://aroma-turan.com/cast/",
+  "next_page_url": {
     "xpath": null,
     "attr": null,
     "regex": null,
     "ng_words": null
   },
+  "detail": {
+    "xpath": "//ul[contains(@class, 'gallist')]/li/a",
+    "attr": "href",
+    "regex": null,
+    "ng_words": null
+  },
   "therapist": {
     "name": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//section[@id='profdata']/h3",
+      "regex": "(.*)\\(",
       "ng_words": null
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//section[@id='profdata']/h3",
+      "regex": "\\((\\d{1,2})\\)",
       "ng_words": null
     },
     "height": {
-      "xpath": null,
+      "xpath": "//section[@id='profdata']//dt[contains(text(), '身長')]/following-sibling::dd",
       "regex": null,
       "ng_words": null
     },
     "comment": {
-      "xpath": null,
+      "xpath": "//section[@id='profdata']//dt[contains(text(), 'コメント')]/following-sibling::dd",
       "regex": null,
       "ng_words": null
     },
@@ -36,30 +42,30 @@
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//div[@id='imageList']//img",
+      "attr": "src",
       "regex": null,
       "ng_words": null
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='time']/preceding-sibling::p[@class='days']",
+          "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='time']/preceding-sibling::p[@class='days']",
+          "regex": "/(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='time']",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='time']",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }

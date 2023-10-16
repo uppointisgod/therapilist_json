@@ -2,6 +2,12 @@
   "url": "https://sr-himawari.com/",
   "refnavi_url": "https://osaka.refle.info/shop/secret-room/",
   "list_url": "https://sr-himawari.com/cast",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//ul[contains(@class, 'gallist')]/li/a",
     "attr": "href",

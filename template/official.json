@@ -2,6 +2,12 @@
   "url": "INS_OFFICIAL_URL",
   "refnavi_url": "INS_REFNAVI_URL",
   "list_url": null,
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": null,
     "attr": null,

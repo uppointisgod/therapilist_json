@@ -2,6 +2,12 @@
   "url": "https://mrs-pulpunte.com",
   "refnavi_url": "https://osaka.refle.info/shop/mrs-pulpunte/",
   "list_url": "https://mrs-pulpunte.com/gals/",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//*[@class='listTypeJ']//li/a",
     "attr": "href",

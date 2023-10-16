@@ -2,6 +2,12 @@
   "url": "https://ore-no-ie.com",
   "refnavi_url": "https://osaka.refle.info/shop/oreie/",
   "list_url": "https://ore-no-ie.com/staff.php",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//ul[contains(@class, 'cast_box')]/li/a",
     "attr": "href",

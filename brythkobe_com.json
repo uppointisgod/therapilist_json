@@ -2,6 +2,12 @@
   "url": "https://brythkobe.com/",
   "refnavi_url": "https://kobe.refle.info/shop/bryth-kobe/",
   "list_url": "https://brythkobe.com/therapist.php",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//section[@class='thept_list_box']//ul[@class='thept_box']/li/a",
     "attr": "href",

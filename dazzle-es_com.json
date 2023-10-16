@@ -2,6 +2,12 @@
   "url": "https://dazzle-es.com/",
   "refnavi_url": "https://osaka.refle.info/shop/dazzle-es/",
   "list_url": "https://dazzle-es.com/therapist",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//div[contains(@class, 'staffsList')]/div[contains(@class, 'item')]/a",
     "attr": "href",

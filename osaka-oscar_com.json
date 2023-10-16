@@ -2,6 +2,12 @@
   "url": "https://osaka-oscar.com/",
   "refnavi_url": "https://osaka.refle.info/shop/osaka-oscar/",
   "list_url": "https://osaka-oscar.com/therapist",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//main[@id='therapists']//ul[@class, 'scheduleList']/li/a",
     "attr": "href",

@@ -2,6 +2,12 @@
   "url": "https://akasi-es.net",
   "refnavi_url": "https://osaka.refle.info/shop/lemonade-akashi/",
   "list_url": "https://akasi-es.net/gals/",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//*[@class='listTypeJ']//li/a",
     "attr": "href",

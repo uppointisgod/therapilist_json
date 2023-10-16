@@ -2,6 +2,12 @@
   "url": "https://firstclass-osaka.net",
   "refnavi_url": "https://osaka.refle.info/shop/firstclass/",
   "list_url": "https://firstclass-osaka.net/cast_list",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//*[@id='therapist']//a[@class='cast_image']",
     "attr": "href",

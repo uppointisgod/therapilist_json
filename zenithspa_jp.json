@@ -1,22 +1,31 @@
 {
   "url": "https://zenithspa.jp/",
   "refnavi_url": "https://osaka.refle.info/shop/zenithspa/",
-  "list_url": null,
-  "detail": {
+  "list_url": "https://zenithspa.jp/list/",
+  "next_page_url": {
     "xpath": null,
     "attr": null,
     "regex": null,
     "ng_words": null
   },
+  "detail": {
+    "xpath": "//*[@class='listTypeJ']//li/a",
+    "attr": "href",
+    "regex": null,
+    "ng_words": null
+  },
   "therapist": {
     "name": {
-      "xpath": null,
-      "regex": null,
-      "ng_words": null
+      "xpath": "//div[@id='alwaysShow']//h3",
+      "regex": "(.*)\\(",
+      "ng_words": [
+        "割",
+        "ゼニス祭"
+      ]
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[@id='alwaysShow']//h3",
+      "regex": "(\\d{1,2})",
       "ng_words": null
     },
     "height": {
@@ -25,41 +34,41 @@
       "ng_words": null
     },
     "comment": {
-      "xpath": null,
+      "xpath": "//div[@id='pdata_box']//tr/th[contains(text(), 'お店からのコメント')]/following-sibling::td/span",
       "regex": null,
       "ng_words": null
     },
     "x_account": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//span[@class='iconTwitter']/a",
+      "attr": "href",
       "regex": null,
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//div[contains(@class, 'gallery-top')]//li[contains(@class, 'swiper-slide')]//img",
+      "attr": "src",
       "regex": null,
       "ng_words": null
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schedule_box']//tr/th",
+          "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schedule_box']//tr/th",
+          "regex": "/(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schedule_box']//tr/td",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@id='schedule_box']//tr/td",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }

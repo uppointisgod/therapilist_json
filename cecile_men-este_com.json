@@ -2,6 +2,12 @@
   "url": "https://cecile.men-este.com/",
   "refnavi_url": "https://osaka.refle.info/shop/cecile/",
   "list_url": "https://cecile.men-este.com/therapist.html",
+  "next_page_url": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
   "detail": {
     "xpath": "//div[@class='staff-image']/a",
     "attr": "href",
