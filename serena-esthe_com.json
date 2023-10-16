@@ -46,11 +46,11 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[1]//th[contains(text(), '月')]",
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[1]//*[contains(text(), '月')]",
           "regex": "(\\d{1,2})月"
         },
         "day": {
-          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[1]//th[contains(text(), '日')]",
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[1]//*[contains(text(), '日')]",
           "regex": "(\\d{1,2})日"
         }
       },
