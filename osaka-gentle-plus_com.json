@@ -16,7 +16,7 @@
     },
     "age": {
       "xpath": "//section[@id='profdata']/h3",
-      "regex": "(\\d{1,2})",
+      "regex": "\\((\\d{1,2})\\)",
       "ng_words": null
     },
     "height": {
