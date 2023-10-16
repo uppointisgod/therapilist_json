@@ -1,31 +1,31 @@
 {
   "url": "https://amateur-therapy.com/",
   "refnavi_url": "https://osaka.refle.info/shop/shiroutotherapy/",
-  "list_url": null,
+  "list_url": "https://amateur-therapy.com/lady.php",
   "detail": {
-    "xpath": null,
-    "attr": null,
+    "xpath": "//ul[@class='ladyList']/li/a",
+    "attr": "href",
     "regex": null,
     "ng_words": null
   },
   "therapist": {
     "name": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//h2[@class='ladyName']/em",
+      "regex": "(.*)（",
       "ng_words": null
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//h2[@class='ladyName']/em",
+      "regex": "（(\\d{1,2})歳）",
       "ng_words": null
     },
     "height": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//table[@id='profile']//tr/th[contains(text(), '身長')]/following-sibling::td",
+      "regex": "(\\d{1,3})cm",
       "ng_words": null
     },
     "comment": {
-      "xpath": null,
+      "xpath": "//table[@id='profile']//tr/th[contains(text(), 'お店から')]/following-sibling::td",
       "regex": null,
       "ng_words": null
     },
@@ -36,30 +36,30 @@
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//div[@id='gallary']//ul[contains(@class, 'slides_container')]/slides_control//img",
+      "attr": "src",
       "regex": null,
       "ng_words": null
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//table[@id='schedule']//tr[contains(@class, 'subTtl')]/th",
+          "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//table[@id='schedule']//tr[contains(@class, 'subTtl')]/th",
+          "regex": "/(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')]",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')]",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }
