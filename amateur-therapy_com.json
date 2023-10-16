@@ -54,11 +54,11 @@
       },
       "time": {
         "start": {
-          "xpath": "//table[@id='schedule']//tr//(td[not(em)] | td/em[contains(@class, 'time')])",
+          "xpath": "//table[@id='schedule']//tr//td[child::node()[not(self::em) or self::em[contains(@class, 'time')]]]",
           "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": "//table[@id='schedule']//tr//(td[not(em)] | td/em[contains(@class, 'time')])",
+          "xpath": "//table[@id='schedule']//tr//td[child::node()[not(self::em) or self::em[contains(@class, 'time')]]]",
           "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
