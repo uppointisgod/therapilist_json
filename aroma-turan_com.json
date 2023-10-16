@@ -1,0 +1,67 @@
+{
+  "url": "https://aroma-turan.com/",
+  "refnavi_url": "https://osaka.refle.info/shop/aroma-turan/",
+  "list_url": null,
+  "detail": {
+    "xpath": null,
+    "attr": null,
+    "regex": null,
+    "ng_words": null
+  },
+  "therapist": {
+    "name": {
+      "xpath": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "age": {
+      "xpath": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "height": {
+      "xpath": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "comment": {
+      "xpath": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "x_account": {
+      "xpath": null,
+      "attr": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "image": {
+      "xpath": null,
+      "attr": null,
+      "regex": null,
+      "ng_words": null
+    },
+    "schedule": {
+      "date": {
+        "month": {
+          "xpath": null,
+          "regex": null
+        },
+        "day": {
+          "xpath": null,
+          "regex": null
+        }
+      },
+      "time": {
+        "start": {
+          "xpath": null,
+          "regex": null
+        },
+        "end": {
+          "xpath": null,
+          "regex": null
+        }
+      }
+    }
+  }
+}
