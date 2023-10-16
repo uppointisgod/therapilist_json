@@ -1,27 +1,27 @@
 {
   "url": "https://dazzle-es.com/",
   "refnavi_url": "https://osaka.refle.info/shop/dazzle-es/",
-  "list_url": null,
+  "list_url": "https://dazzle-es.com/therapist",
   "detail": {
-    "xpath": null,
-    "attr": null,
+    "xpath": "//div[contains(@class, 'staffsList')]/div[contains(@class, 'item')]/a",
+    "attr": "href",
     "regex": null,
     "ng_words": null
   },
   "therapist": {
     "name": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[contains(@class, 'itemRight')]//h3[contains(@class, 'itemName')]",
+      "regex": "(.*)（",
       "ng_words": null
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[contains(@class, 'itemRight')]//h3[contains(@class, 'itemName')]",
+      "regex": "(\\d{1,2})歳",
       "ng_words": null
     },
     "height": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[contains(@class, 'itemRight')]//div[contains(@class, 'itemProf')]/label[contains(text(), '身長')]/parent::div",
+      "regex": "(\\d{1,3})cm",
       "ng_words": null
     },
     "comment": {
@@ -36,30 +36,32 @@
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//div[@id='therapist-thumbs']//img",
+      "attr": "src",
       "regex": null,
-      "ng_words": null
+      "ng_words": [
+        "no_image"
+      ]
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@class='profileScheduleTable']//tr[@class='headerTr']/th",
+          "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@class='profileScheduleTable']//tr[@class='headerTr']/th",
+          "regex": "/(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@class='profileScheduleTable']//tr[@class='bodyTr']/td",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[@class='profileScheduleTable']//tr[@class='bodyTr']/td",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }
