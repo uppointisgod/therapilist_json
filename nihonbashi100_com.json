@@ -2,7 +2,7 @@
   "url": "https://nihonbashi100.com/",
   "refnavi_url": "https://osaka.refle.info/shop/hundred/",
   "list_url": "https://nihonbashi100.com/therapists/page/{index}/",
-  "next_page": {
+  "next_page_url": {
     "xpath": "//div[@class='local-navigation']//span[contains(@class, 'page-numbers') and contains(@class, 'active')]/following-sibling::span[contains(@class, 'page-numbers')]/a",
     "attr": "href",
     "regex": null,
