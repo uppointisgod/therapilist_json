@@ -1,65 +1,69 @@
 {
   "url": "https://brythkobe.com/",
   "refnavi_url": "https://kobe.refle.info/shop/bryth-kobe/",
-  "list_url": null,
+  "list_url": "https://brythkobe.com/therapist.php",
   "detail": {
-    "xpath": null,
-    "attr": null,
+    "xpath": "//section[@class='thept_list_box']//ul[@class='thept_box']/li/a",
+    "attr": "href",
     "regex": null,
     "ng_words": null
   },
   "therapist": {
     "name": {
-      "xpath": null,
-      "regex": null,
-      "ng_words": null
+      "xpath": "//div[@class='profile_box_right']/div[@class='txt_box']/p",
+      "regex": "(.*)\\(",
+      "ng_words": [
+        "フリー割"
+      ]
     },
     "age": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[@class='profile_box_right']/div[@class='txt_box']/p",
+      "regex": "\\((\\d{1,2})\\)",
       "ng_words": null
     },
     "height": {
-      "xpath": null,
-      "regex": null,
+      "xpath": "//div[@class='profile_box_right']/div[@class='txt_box']/p[2]",
+      "regex": "(\\d{1,3})",
       "ng_words": null
     },
     "comment": {
-      "xpath": null,
+      "xpath": "//h3[@class='subtitle' and contains(text(), 'Comment')]/following-sibling::div[@class='txt_box']",
       "regex": null,
       "ng_words": null
     },
     "x_account": {
       "xpath": null,
-      "attr": null,
+      "attr": "href",
       "regex": null,
       "ng_words": null
     },
     "image": {
-      "xpath": null,
-      "attr": null,
+      "xpath": "//div[@class='profile_box_left']//img[@class='cast_thumb']",
+      "attr": "src",
       "regex": null,
-      "ng_words": null
+      "ng_words": [
+        "no_image"
+      ]
     },
     "schedule": {
       "date": {
         "month": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//th[contains(text(), '月')]",
+          "regex": "(\\d{1,2})月"
         },
         "day": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//th[contains(text(), '日')]",
+          "regex": "(\\d{1,2})日"
         }
       },
       "time": {
         "start": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//td",
+          "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": null,
-          "regex": null
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//td",
+          "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
     }
