@@ -47,21 +47,21 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//div[contains(@class,'sch-date')]",
+          "xpath": "//div[contains(@class,'sch-date')]//dd",
           "regex": "^(\\d{1,2})/"
         },
         "day": {
-          "xpath": "//div[contains(@class,'sch-date')]",
+          "xpath": "//div[contains(@class,'sch-date')]//dd",
           "regex": "/(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": "//div[contains(@class,'sch-work')]",
+          "xpath": "//div[contains(@class,'sch-work')]//dd",
           "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": "//div[contains(@class,'sch-work')]",
+          "xpath": "//div[contains(@class,'sch-work')]//dd",
           "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
