@@ -47,11 +47,11 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//div[contains(@class,'sch-date')]//dd",
+          "xpath": "//div[contains(@class,'sch-date')]//dt",
           "regex": "^(\\d{1,2})/"
         },
         "day": {
-          "xpath": "//div[contains(@class,'sch-date')]//dd",
+          "xpath": "//div[contains(@class,'sch-date')]//dt",
           "regex": "/(\\d{1,2})"
         }
       },
