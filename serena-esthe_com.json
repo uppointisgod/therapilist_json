@@ -46,7 +46,7 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//div[contains(@class, 'profile_sch_prof_box)]//th[contains(text(), '月')]",
+          "xpath": "//div[contains(@class, 'profile_sch_prof_box')]//th[contains(text(), '月')]",
           "regex": "(\\d{1,2})月"
         },
         "day": {
