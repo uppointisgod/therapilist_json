@@ -30,7 +30,7 @@
       "ng_words": null
     },
     "x_account": {
-      "xpath": "//h3[@class='subtitle' and contains(text(), 'Message')]/following-sibling::div[@class='txt_box']//a[contains(@href, 'twitter')]",
+      "xpath": "//h3[@class='subtitle' and contains(text(), 'Message')]/following-sibling::div[contains(@class, 'txt_box')]//a[contains(@href, 'twitter')]",
       "attr": "href",
       "regex": null,
       "ng_words": null
