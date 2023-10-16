@@ -44,11 +44,11 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='days']",
+          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='time']/following-sibling::p[@class='days']",
           "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='days']",
+          "xpath": "//div[@id='schebox']//ul[@class='pc']/li/p[@class='time']/following-sibling::p[@class='days']",
           "regex": "/(\\d{1,2})"
         }
       },
