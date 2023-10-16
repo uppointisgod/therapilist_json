@@ -40,7 +40,7 @@
       "attr": "src",
       "regex": null,
       "ng_words": [
-        "noimage"
+        "no_image"
       ]
     },
     "schedule": {
