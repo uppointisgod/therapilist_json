@@ -44,23 +44,21 @@
     "schedule": {
       "date": {
         "month": {
-
-
-          "xpath":"//table[@id='schedule']/thead/tr/th[position() = (//table[@id='schedule']/tbody/tr/td[em]/preceding-sibling::td/count() + 1)]",
+          "xpath": "//table[@id='schedule']/thead/tr/th[position() = count((//table[@id='schedule']/tbody/tr/td[em])[1]/preceding-sibling::td) + 1]",
           "regex": "(\\d{1,2})/"
         },
         "day": {
-          "xpath":"//table[@id='schedule']/thead/tr/th[position() = (//table[@id='schedule']/tbody/tr/td[em]/preceding-sibling::td/count() + 1)]",
+          "xpath": "//table[@id='schedule']/thead/tr/th[position() = count((//table[@id='schedule']/tbody/tr/td[em])[1]/preceding-sibling::td) + 1]",
           "regex": "/(\\d{1,2})"
         }
       },
       "time": {
         "start": {
-          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')]",
+          "xpath": "(//table[@id='schedule']/tbody/tr/td[em])[1]",
           "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')]",
+          "xpath": "(//table[@id='schedule']/tbody/tr/td[em])[1]",
           "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
