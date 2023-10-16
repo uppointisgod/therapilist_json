@@ -46,21 +46,21 @@
     "schedule": {
       "date": {
         "month": {
-          "xpath": "//div[contains(@class, 'sch_prof_box')]//th[contains(text(), '月')]",
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[@class='flex-active-slide']//th[contains(text(), '月')]",
           "regex": "(\\d{1,2})月"
         },
         "day": {
-          "xpath": "//div[contains(@class, 'sch_prof_box')]//th[contains(text(), '日')]",
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[@class='flex-active-slide']//th[contains(text(), '日')]",
           "regex": "(\\d{1,2})日"
         }
       },
       "time": {
         "start": {
-          "xpath": "//div[contains(@class, 'sch_prof_box')]//td",
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[@class='flex-active-slide']//td",
           "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": "//div[contains(@class, 'sch_prof_box')]//td",
+          "xpath": "//div[contains(@class, 'sch_prof_box')]//li[@class='flex-active-slide']//td",
           "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
