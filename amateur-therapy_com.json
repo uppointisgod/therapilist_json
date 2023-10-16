@@ -54,11 +54,11 @@
       },
       "time": {
         "start": {
-          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')] | //table[@id='schedule']//tr/td",
+          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')] | //table[@id='schedule']//tr/td[not(em[contains(@class, 'time')])]",
           "regex": "^(\\d{1,2}):(\\d{1,2})"
         },
         "end": {
-          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')] | //table[@id='schedule']//tr/td",
+          "xpath": "//table[@id='schedule']//tr/td/em[contains(@class, 'time')] | //table[@id='schedule']//tr/td[not(em[contains(@class, 'time')])]",
           "regex": "(\\d{1,2}):(\\d{1,2})$"
         }
       }
